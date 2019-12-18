@@ -23,8 +23,8 @@ const Movie = (props) => {
  
   // Uncomment this only when you have moved on to the stretch goals
   const saveMovie = () => {
-    const addToSavedList = props.addToSavedList;
-    addToSavedList(movie)
+    // const addToSavedList = props.addToSavedList;
+    props.addToSavedList(movie)
   }
 
   if (!movie) {
@@ -35,7 +35,7 @@ const Movie = (props) => {
   return (
     <div className="save-wrapper">
       <MovieCard className="movie-card" title={title} director={director} metascore={metascore} stars={stars} />
-      <div  onClick="" className="save-button">Save</div>
+      <div  onClick={saveMovie} className="save-button">Save</div>
     </div>
   );
 }
