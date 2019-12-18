@@ -12,7 +12,7 @@ const App = () => {
  
   return (
     <div>
-      <SavedList list={savedList} />
+      <SavedList list={savedList} path="/movies/:id" />
       {/* <NavLink to="/">Home</NavLink> */}
       {/* <NavLink to="/Movie">Movies</NavLink> */}
       <Switch>
